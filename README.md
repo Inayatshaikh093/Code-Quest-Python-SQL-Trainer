@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![CI](https://img.shields.io/badge/tests-unittest-green.svg)](.github/workflows/ci.yml)
 
-Code Quest is a beginner-friendly command-line learning game for Python and SQL. It uses interactive challenges, instant feedback, and progress tracking to help users build practical coding and query skills.
+Code Quest is a beginner-friendly learning game for Python and SQL. It now includes a fun web app for beginners with guided explanations, hints, and progress tracking.
 
 ![Code Quest Demo](assets/demo.gif)
 
@@ -37,6 +37,15 @@ Code Quest is a beginner-friendly command-line learning game for Python and SQL.
 cd "/Users/kyleparker/Documents/code game"
 python3 main.py
 ```
+
+## Run the web app (recommended)
+```bash
+cd "/Users/kyleparker/Documents/code game"
+pip3 install -r requirements.txt
+python3 web_app.py
+```
+
+Then open `http://127.0.0.1:5000` in your browser.
 
 ## Example game loop
 1. Pick Python or SQL challenge.

@@ -1,0 +1,254 @@
+:root {
+  --bg-a: #0b1222;
+  --bg-b: #111c35;
+  --surface: #162645;
+  --surface-2: #1c3158;
+  --text: #eff5ff;
+  --muted: #a8b9d6;
+  --accent: #19d3a2;
+  --accent-2: #ffb347;
+  --danger: #ff7e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 10% 10%, #1d3d6d 0%, var(--bg-a) 45%, #080d18 100%);
+  overflow-x: hidden;
+}
+
+.bg-shape {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
+  opacity: 0.35;
+}
+
+.bg-shape-a {
+  width: 320px;
+  height: 320px;
+  background: #26d0ce;
+  top: -80px;
+  left: -90px;
+}
+
+.bg-shape-b {
+  width: 260px;
+  height: 260px;
+  background: #ff9f43;
+  right: -80px;
+  bottom: -60px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: min(980px, 92vw);
+  margin: 2rem auto 3rem;
+}
+
+.hero,
+.card {
+  background: linear-gradient(160deg, rgba(28, 49, 88, 0.95), rgba(17, 29, 54, 0.95));
+  border: 1px solid rgba(120, 151, 206, 0.24);
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.32);
+  animation: rise 500ms ease;
+}
+
+.hero {
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 68ch;
+}
+
+.eyebrow {
+  color: var(--accent-2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  margin: 0 0 0.35rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.3rem;
+}
+
+.stat {
+  padding: 1rem;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.stat strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.3rem;
+}
+
+.btn {
+  font: inherit;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: linear-gradient(120deg, var(--accent), #18b0c3);
+  color: #03171a;
+  font-weight: 700;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(173, 198, 241, 0.35);
+}
+
+.grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.feature {
+  padding: 1.1rem;
+}
+
+.feature p {
+  color: var(--muted);
+}
+
+.back-link {
+  color: #b9cdf2;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.lesson {
+  padding: 1.3rem;
+}
+
+.challenge pre {
+  background: #0a1326;
+  border: 1px solid rgba(128, 158, 213, 0.32);
+  border-radius: 12px;
+  padding: 1rem;
+  white-space: pre-wrap;
+  font-family: "JetBrains Mono", monospace;
+  color: #d4e4ff;
+}
+
+.answer-form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.answer-form input {
+  width: 100%;
+  border: 1px solid rgba(130, 160, 216, 0.45);
+  background: #0c1730;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.attempts {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.feedback {
+  margin-top: 1rem;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.feedback.success {
+  background: rgba(25, 211, 162, 0.12);
+  border: 1px solid rgba(25, 211, 162, 0.45);
+}
+
+.feedback.retry {
+  background: rgba(255, 179, 71, 0.12);
+  border: 1px solid rgba(255, 179, 71, 0.45);
+}
+
+.feedback.reveal {
+  background: rgba(255, 126, 121, 0.1);
+  border: 1px solid rgba(255, 126, 121, 0.4);
+}
+
+.award {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.done {
+  text-align: center;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 860px) {
+  .stats,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

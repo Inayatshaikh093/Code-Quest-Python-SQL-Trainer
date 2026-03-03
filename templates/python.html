@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<a class="back-link" href="{{ url_for('home') }}">← Back to dashboard</a>
+
+{% if complete %}
+<section class="card lesson done">
+  <h1>You completed all Python lessons.</h1>
+  <p>Great work. Reset progress to replay and reinforce the concepts.</p>
+  <form method="post" action="{{ url_for('reset') }}">
+    <button class="btn btn-primary" type="submit">Reset and Replay</button>
+  </form>
+</section>
+{% else %}
+<section class="card lesson">
+  <div class="lesson-head">
+    <p class="eyebrow">Lesson {{ lesson_number }} / {{ total_lessons }}</p>
+    <h1>{{ lesson.title }}</h1>
+    <p class="lead">{{ lesson.concept }}</p>
+  </div>
+
+  <div class="challenge">
+    <h2>Challenge</h2>
+    <pre>{{ lesson.prompt }}</pre>
+  </div>
+
+  <form method="post" action="{{ url_for('submit_python_answer') }}" class="answer-form">
+    <label for="answer">Your answer</label>
+    <input id="answer" name="answer" type="text" autocomplete="off" placeholder="Type your answer here" required />
+    <button class="btn btn-primary" type="submit">Check Answer</button>
+  </form>
+
+  <p class="attempts">Attempts used: {{ attempts }}/3</p>
+
+  {% if feedback %}
+  <article class="feedback {{ status }}">
+    <h3>{{ feedback.title }}</h3>
+    <p>{{ feedback.message }}</p>
+    {% if feedback.hint %}<p><strong>Hint:</strong> {{ feedback.hint }}</p>{% endif %}
+    <p><strong>Why it works:</strong> {{ feedback.explanation }}</p>
+    <p><strong>Try this too:</strong> {{ feedback.example }}</p>
+    {% if feedback.award %}<p class="award">{{ feedback.award }}</p>{% endif %}
+
+    {% if status == 'success' %}
+    <a class="btn btn-primary" href="{{ url_for('python_lesson') }}">Next Lesson</a>
+    {% endif %}
+
+    {% if status == 'reveal' %}
+    <form method="post" action="{{ url_for('continue_after_review') }}">
+      <button class="btn btn-ghost" type="submit">Continue to Next Lesson</button>
+    </form>
+    {% endif %}
+  </article>
+  {% endif %}
+</section>
+{% endif %}
+{% endblock %}

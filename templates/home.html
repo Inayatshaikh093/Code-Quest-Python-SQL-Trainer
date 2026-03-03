@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Code Quest Web</p>
+  <h1>Learn Python Like a Game</h1>
+  <p class="lead">Built for absolute beginners. Every level teaches one concept, checks your answer, and explains why it works.</p>
+  <div class="stats">
+    <div class="card stat">
+      <span>Score</span>
+      <strong>{{ progress.score }}</strong>
+    </div>
+    <div class="card stat">
+      <span>Lessons Complete</span>
+      <strong>{{ progress.python_done }}/3</strong>
+    </div>
+    <div class="card stat">
+      <span>Current Lesson</span>
+      <strong>{{ current }}/{{ total }}</strong>
+    </div>
+  </div>
+  <div class="actions">
+    <a class="btn btn-primary" href="{{ url_for('python_lesson') }}">Start Learning</a>
+    <form method="post" action="{{ url_for('reset') }}">
+      <button class="btn btn-ghost" type="submit">Reset Progress</button>
+    </form>
+  </div>
+</section>
+
+<section class="grid">
+  <article class="card feature">
+    <h2>1. Try</h2>
+    <p>Answer a challenge using what you know right now.</p>
+  </article>
+  <article class="card feature">
+    <h2>2. Learn</h2>
+    <p>Get hints and beginner-safe breakdowns if you miss.</p>
+  </article>
+  <article class="card feature">
+    <h2>3. Master</h2>
+    <p>Earn points and build confidence one concept at a time.</p>
+  </article>
+</section>
+{% endblock %}
